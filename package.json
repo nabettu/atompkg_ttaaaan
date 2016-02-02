@@ -1,9 +1,10 @@
 {
   "name": "ttaaaan",
   "main": "./lib/ttaaaan",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "キーボードを打つ度に「カタカタッ」「ッターーーーン！」とかっこいいエフェクトが出るよ",
   "keywords": [
+    "ttaaaan"
   ],
   "activationCommands": {
     "atom-workspace": "Ttaaaan:toggle"
