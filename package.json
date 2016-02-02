@@ -2,13 +2,13 @@
   "name": "ttaaaan",
   "main": "./lib/ttaaaan",
   "version": "0.0.0",
-  "description": "キーボードを打つ度に「ッターーーーン！」とかっこいいエフェクトが出るよ",
+  "description": "キーボードを打つ度に「カタカタッ」「ッターーーーン！」とかっこいいエフェクトが出るよ",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "Ttaaaan:toggle"
   },
-  "repository": "https://github.com/atom/ttaaaan",
+  "repository": "https://github.com/nabettu/atompkg_ttaaaan",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

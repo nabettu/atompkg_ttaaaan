@@ -23,6 +23,8 @@ module.exports = Ttaaaan =
 
         @enterimg = document.createElement "img"
         @enterimg.src = "atom://ttaaaan/img/1.png"
+        @enterimg.width = 1037
+        @enterimg.height = 418
 
         @canvas = document.createElement "canvas"
         @editorElement.parentNode.appendChild @canvas
@@ -30,11 +32,14 @@ module.exports = Ttaaaan =
         @canvas.classList.add "ttaaaan-canvas"
         @w = @editorElement.offsetWidth
         @h = @editorElement.offsetHeight
+
         @canvas.width = @w
         @canvas.height = @h
         @canvasstate = false
         @otherkey = 0
+
     onChange: (e) ->
+        return if not @active
         @canvas.style.display = "block" if @canvas
         newtext = escape(e.newText).replace(/%20|\s/g,"")
         if newtext is "%0A"
@@ -42,7 +47,8 @@ module.exports = Ttaaaan =
             @context.clearRect(0, 0, @w + 100, @h)
             @context.rotate(r)
             @context.translate(@w/2,@h/2)
-            @context.drawImage @enterimg,-550,-150
+            imgh = @enterimg.height * @w / @enterimg.width
+            @context.drawImage @enterimg,-@w/2,-imgh/1.8,@w*0.9,imgh*0.9
             @context.translate(-@w/2,-@h/2)
             @context.rotate(-r)
             @canvasstate = true
@@ -64,4 +70,7 @@ module.exports = Ttaaaan =
                 @context.translate(-ow, -hw)
                 @context.rotate(-r)
     toggle: ->
+        @active = not @active
+        unless @active
+          @canvas.style.display = "none"
         console.log 'Ttaaaan was toggled!'

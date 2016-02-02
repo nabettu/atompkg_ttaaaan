@@ -1,5 +1,17 @@
 # ttaaaan package
 
-A short description of your package.
+キーを打つたびに擬音が表示され、気持よくコーディング出来ます。特にEnterキーがアツいです。
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+##こんな時に
+
+* コーディングの能率アップに
+* 大好きなあの子とペアプログラミングする時に
+* ライブコーディングで自分のAtomを見せつける時に
+* もう帰ってジョジョが読みたいけど徹夜確定で帰れない夜に
+* みんな頑張って生きようね
+
+##擬音画像イメージ製作
+SHIGEKI IWASE
+
+##利用イメージ
+![A screenshot of your package](https://github.com/nabettu/atompkg_ttaaaan/blob/master/img/sample.gif?raw=true)
