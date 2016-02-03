@@ -1,5 +1,3 @@
-$ = require("jquery")
-
 {CompositeDisposable} = require 'atom'
 
 module.exports = Ttaaaan =
