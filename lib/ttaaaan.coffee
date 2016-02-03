@@ -56,7 +56,7 @@ module.exports = Ttaaaan =
             if @canvasstate
                 @context.clearRect(0, 0, @w + 100, @h)
                 @canvasstate = false
-            if @otherkey > 2
+            if @otherkey > 3
                 @otherkey = 0
                 r = Math.random() * 0.05
                 @context.rotate(r)
