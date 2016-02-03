@@ -2,12 +2,13 @@
 
 module.exports = Ttaaaan =
     subscriptions: null
-    active: false
+    active: true
 
     activate: (state) ->
         @subscriptions = new CompositeDisposable
         @subscriptions.add atom.commands.add 'atom-workspace', 'ttaaaan:toggle': => @toggle()
 
+        console.log 'Ttaaaan is on'
         @setup()
         @subscribeToActiveTextEditor()
 
@@ -70,5 +71,8 @@ module.exports = Ttaaaan =
     toggle: ->
         @active = not @active
         unless @active
-          @canvas.style.display = "none"
-        console.log 'Ttaaaan was toggled!'
+          @canvas.style.display = "none" if @canvas
+          console.log 'Ttaaaan is off'
+        else
+          @canvas.style.display = "display" if @canvas
+          console.log 'Ttaaaan is on'
