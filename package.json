@@ -1,7 +1,7 @@
 {
   "name": "ttaaaan",
   "main": "./lib/ttaaaan",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "キーボードを打つ度に「カタカタッ」「ッターーーーン！」とかっこいいエフェクトが出るよ",
   "keywords": [
     "ttaaaan"
